@@ -14,24 +14,36 @@
         }
 
         .menu {
-            height: 100vh;
+            height: 90vh;
             width: 100%;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
 
-        object {
-            width: 100%;
-            height: 100%;
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .download-button {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="menu">
-        <object data="./DUMONO_BAR_MENU.pdf" type="application/pdf">
-            <embed src="./DUMONO_BAR_MENU.pdf" type="application/pdf" />
-        </object>
+        <h1>Welcome to the Bar</h1>
+        <img src="dumono_logo.png" alt="Logo" />
+        <a class="download-button" href="./DUMONO_BAR_MENU.pdf" download>Download and View Menu (PDF)</a>
     </div>
 </body>
 </html>
+
